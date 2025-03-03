@@ -1,5 +1,4 @@
 {
-<<<<<<< Updated upstream
   "name": "cybermix",
   "version": "0.1.0",
   "private": true,
@@ -38,9 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-=======
-  "dependencies": {
-    "node": "^23.9.0"
->>>>>>> Stashed changes
   }
 }

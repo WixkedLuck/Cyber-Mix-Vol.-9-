@@ -12,9 +12,9 @@ import {FaLinkedinIn} from "react-icons/fa";
 
 
             <div class="stack" Style="--stacks: 3;">
-                <span Style="--index: 0;">Cyber Pack Vol. 9</span>
-                <span Style="--index: 1;">Cyber Pack Vol. 9</span>
-                <span Style="--index: 2;">Cyber Pack Vol. 9</span>
+                <span Style="--index: 0;">Cyber Pak Vol. 9</span>
+                <span Style="--index: 1;">Cyber Pak Vol. 9</span>
+                <span Style="--index: 2;">Cyber Pak Vol. 9</span>
             </div>
             <div  class="socialclass">
             

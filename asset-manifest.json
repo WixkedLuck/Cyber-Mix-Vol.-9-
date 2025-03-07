@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/Cyber-Mix-Vol.-9-/static/css/main.d173b279.css",
-    "main.js": "/Cyber-Mix-Vol.-9-/static/js/main.af356f96.js",
+    "main.js": "/Cyber-Mix-Vol.-9-/static/js/main.29214ff5.js",
     "static/media/Password-Gen-img.png": "/Cyber-Mix-Vol.-9-/static/media/Password-Gen-img.4e1c646d0ffe886eec55.png",
+    "static/media/Cypher Shift.png": "/Cyber-Mix-Vol.-9-/static/media/Cypher Shift.e619abd3705d6d431937.png",
     "static/media/SQL-Injections-img.png": "/Cyber-Mix-Vol.-9-/static/media/SQL-Injections-img.b50878ae52556cb99e46.png",
+    "static/media/CyberGaurd.png": "/Cyber-Mix-Vol.-9-/static/media/CyberGaurd.79dfeed852c5968e7295.png",
     "index.html": "/Cyber-Mix-Vol.-9-/index.html",
     "main.d173b279.css.map": "/Cyber-Mix-Vol.-9-/static/css/main.d173b279.css.map",
-    "main.af356f96.js.map": "/Cyber-Mix-Vol.-9-/static/js/main.af356f96.js.map"
+    "main.29214ff5.js.map": "/Cyber-Mix-Vol.-9-/static/js/main.29214ff5.js.map"
   },
   "entrypoints": [
     "static/css/main.d173b279.css",
-    "static/js/main.af356f96.js"
+    "static/js/main.29214ff5.js"
   ]
 }

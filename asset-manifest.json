@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d173b279.css",
-    "main.js": "/static/js/main.42e52055.js",
-    "static/media/Password-Gen-img.png": "/static/media/Password-Gen-img.4e1c646d0ffe886eec55.png",
-    "static/media/SQL-Injections-img.png": "/static/media/SQL-Injections-img.b50878ae52556cb99e46.png",
-    "index.html": "/index.html",
-    "main.d173b279.css.map": "/static/css/main.d173b279.css.map",
-    "main.42e52055.js.map": "/static/js/main.42e52055.js.map"
+    "main.css": "/Cyber-Mix-Vol.-9-/static/css/main.d173b279.css",
+    "main.js": "/Cyber-Mix-Vol.-9-/static/js/main.af356f96.js",
+    "static/media/Password-Gen-img.png": "/Cyber-Mix-Vol.-9-/static/media/Password-Gen-img.4e1c646d0ffe886eec55.png",
+    "static/media/SQL-Injections-img.png": "/Cyber-Mix-Vol.-9-/static/media/SQL-Injections-img.b50878ae52556cb99e46.png",
+    "index.html": "/Cyber-Mix-Vol.-9-/index.html",
+    "main.d173b279.css.map": "/Cyber-Mix-Vol.-9-/static/css/main.d173b279.css.map",
+    "main.af356f96.js.map": "/Cyber-Mix-Vol.-9-/static/js/main.af356f96.js.map"
   },
   "entrypoints": [
     "static/css/main.d173b279.css",
-    "static/js/main.42e52055.js"
+    "static/js/main.af356f96.js"
   ]
 }

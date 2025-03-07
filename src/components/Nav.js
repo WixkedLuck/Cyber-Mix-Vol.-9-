@@ -7,9 +7,10 @@ import { RiSafe2Fill } from "react-icons/ri";
   
   
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ">
+            <a  class="navbar-brand active" href="#Home"className={currentPage === 'Home' ? 'nav-link ' : ' nav-link '} onClick={() => handlePageChange('Home')}>< RiSafe2Fill color='pink' size={40} /></a>
         <div class="container-fluid">
-          <a class="navbar-brand active" href="#Home"className={currentPage === 'Home' ? 'nav-link active' : ' nav-link notactive'} onClick={() => handlePageChange('Home')}>< RiSafe2Fill color='pink' size={40}/></a>
+        
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +20,7 @@ import { RiSafe2Fill } from "react-icons/ri";
               <a className={currentPage === 'About' ? 'nav-link active' : ' nav-link notactive'}  href="#About" onClick={() => handlePageChange('About')}>Password Generator</a>  
                           </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SQL Injector</a>
+              <a className={currentPage === 'Sql' ? 'nav-link active' : ' nav-link notactive'}  href="#Sql" onClick={() => handlePageChange('Sql')}>SQL Trials</a>  
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>

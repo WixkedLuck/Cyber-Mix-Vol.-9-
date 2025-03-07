@@ -1,50 +1,60 @@
 import React from 'react';
 import '../styles/Home.css'
-import {FaGithubAlt} from "react-icons/fa";
-import {FaLinkedinIn} from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
-
+import Lottie from "lottie-react";
+import PassImg from "../lottie/Password-Gen-img.png";
+import SQLimg from "../lottie/SQL-Injections-img.png";
+import groovyWalkAnimation from "../lottie/astronaut-with-space-shuttle.json";
 // export default function Home() {
-    function Home({ handlePageChange }) {
+function Home({ handlePageChange }) {
     return (
 
         <div class="container text-center">
 
 
-            <div class="stack" Style="--stacks: 3;">
-                <span Style="--index: 0;">Cyber Pak Vol. 9</span>
-                <span Style="--index: 1;">Cyber Pak Vol. 9</span>
-                <span Style="--index: 2;">Cyber Pak Vol. 9</span>
-            </div>
-            <div  class="socialclass">
+       
+                   
             
-            <a className='Icons ' id="socials"  title="GitHub" href="https://github.com/WixkedLuck/" target="_blank" rel="noreferrer"><FaGithubAlt size={40}/></a> 
-            <a className='Icons ' id="socials" title="LinkedIn" href="https://www.linkedin.com/in/david-a-hybner/" target="_blank" rel="noreferrer"><FaLinkedinIn size={40}/></a>
+          
+                <div class="stack" Style="--stacks: 3;">
+                  
+                    <span Style="--index: 0;">Cyber Pak Vol. 9</span>
+                    <span Style="--index: 1;">Cyber Pak Vol. 9</span>
+                    <span Style="--index: 2;">Cyber Pak Vol. 9</span>
+                    </div>
+                    
+                    
+               
+            
+            <div class="socialclass">
+            
+                <a className='Icons ' id="socials" title="GitHub" href="https://github.com/WixkedLuck/" target="_blank" rel="noreferrer"><FaGithubAlt size={40} /></a>
+                <a className='Icons ' id="socials" title="LinkedIn" href="https://www.linkedin.com/in/david-a-hybner/" target="_blank" rel="noreferrer"><FaLinkedinIn size={40} /></a>
             </div>
 
             <div class="row" id="boxes">
-                
-                     <a class="col" onClick={() => handlePageChange('About')}> Password Generator</a>           
-                    
-                
-                <div class="col">
-                    2 of 2
+               
+                <p class="col coll" onClick={() => handlePageChange('About')}> <img src={PassImg} alt='Password Generator V1' id='PassImg'></img> </p>
+
+
+                <div class="col coll">
+                <p class="" onClick={() => handlePageChange('Sql')}> <img src={SQLimg} alt='Password Generator V1' id='Img2'></img> </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    1 of 3
+                <div class="col coll">
+                <p class="" onClick={() => handlePageChange('About')}> <img src={PassImg} alt='Password Generator V1' id='PassImg'></img> </p>
                 </div>
-                <div class="col">
-                    2 of 3
-                </div>
-                <div class="col">
-                    3 of 3
+                <Lottie animationData={groovyWalkAnimation} loop={true} Style="width:20%; height:20%"/>
+                <div class="col coll">
+                <p class="" onClick={() => handlePageChange('About')}> <img src={PassImg} alt='Password Generator V1' id='PassImg'></img> </p>
                 </div>
             </div>
-<div id='footer'>
-    David Hybner 2025
-</div>
+            <div id='footer'>
+                David Hybner 2025
+            </div>
 
         </div>
     );

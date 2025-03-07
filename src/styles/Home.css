@@ -9,14 +9,18 @@ html{
     color: whitesmoke !important;
 }
 
-
+img{
+  max-width: 300px;
+  padding: none;
+  margin: none;
+}
 .stack {
     margin-top: 5rem;
     margin-bottom: 4rem;
     display: grid;
     font-size: larger;
     grid-template-columns: 1fr;
-    color:#463F73 ;
+    color:#8679D9 ;
   }
   
   .stack span {
@@ -69,7 +73,7 @@ html{
     
   }
   .Icons{
-    color: #463F73;
+    color:#8679D9;
   }
   .Icons:hover{
     color:pink;
@@ -81,14 +85,14 @@ html{
 #boxes{
   padding-top: 3rem;
 }
-  .col{
-    margin: 2rem;
-    padding: 5rem;
+  .coll{
+    margin: 3rem;
+    padding: 1rem;
     background-color: pink;
-    border: #463F73 solid 4px ;
+    border: #8679D9 solid 4px ;
   }
 
-  .col:hover{
+  .coll:hover{
     border: #D8EDF2 solid 4px ;
    
     box-shadow:  20px 20px 39px #463F73,
@@ -98,4 +102,5 @@ html{
   #footer{
     padding-top: 3rem;
     padding-bottom: 2rem;
+    color: #8679D9;
   }

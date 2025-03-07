@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap');
 
-*{
-    font-family: 'Cinzel', serif ;
-   
-   
+nav{
+    background-color:#463F73 !important ;
 }
-.navbar{
-    background-color:   #463F73 !important;
+/* .container-fluid{
+    background-color: #463F73;
+} */
+
+.navbar {
+    
     font-size: x-large;
 }
+.bg-body-tertiary{
+    background-color:  none !important ;   
+}
 
-/* .bg{
-    background-color: rgb(23, 23, 23) !important ;
-    color: black;
-    
-} */
+
 .offPage{
     color: whitesmoke ;
   

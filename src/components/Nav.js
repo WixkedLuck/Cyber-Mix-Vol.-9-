@@ -17,13 +17,14 @@ import { RiSafe2Fill } from "react-icons/ri";
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-              <a className={currentPage === 'About' ? 'nav-link active' : ' nav-link notactive'}  href="#About" onClick={() => handlePageChange('About')}>Password Generator</a>  
+              <a className={currentPage === 'About' ? 'nav-link active' : ' nav-link notactive'}  href="#About" onClick={() => handlePageChange('About')}>Password Generator</a> 
                           </li>
               <li class="nav-item">
-              <a className={currentPage === 'Sql' ? 'nav-link active' : ' nav-link notactive'}  href="#Sql" onClick={() => handlePageChange('Sql')}>SQL Trials</a>  
+              <a className={currentPage === 'Sql' ? 'nav-link active' : ' nav-link notactive'}  href="#Sql" onClick={() => handlePageChange('Sql')}>SQL Trials</a>
+                
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Cipher Shift</a>
               </li>
               
             </ul>

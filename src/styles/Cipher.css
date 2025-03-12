@@ -1,0 +1,22 @@
+.layer{
+    
+     background-color: #f9fbfd;;
+    padding:5rem;
+}
+.layer2{
+    background-color: #e7e9eb;
+    padding: 4rem;
+    border: 3px solid #f9fbfd;
+}
+#description{
+    margin-top: 3rem;
+    color: #e7e9eb;
+    font-size: x-large;
+}
+#enddesc{
+   
+    padding-bottom: 5rem;
+}
+#theCipher{
+    font-size: xx-large;
+}

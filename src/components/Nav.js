@@ -24,7 +24,7 @@ import { RiSafe2Fill } from "react-icons/ri";
                 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cipher Shift</a>
+              <a className={currentPage === 'Cipher' ? 'nav-link active' : ' nav-link notactive'}  href="#Cipher-Shift" onClick={() => handlePageChange('Cipher')}>Cipher Shift</a>
               </li>
               
             </ul>

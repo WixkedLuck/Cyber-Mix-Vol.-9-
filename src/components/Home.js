@@ -31,7 +31,7 @@ function Home({ handlePageChange }) {
                
             
             <div class="socialclass">
-                <p Style="color:white;">This website is a comprehensive online platform designed to equip you with essential cybersecurity knowledge and tools. Our interactive homepage features a unique "tackle box" layout, where each clickable box represents a different cybersecurity topic or tool. From encryption techniques to SQL injection, threat detection to compliance, CyberPak offers a wide range of subjects to explore!</p>
+                <p Style="color:white; font-size: x-large; text-align:left;">This website is a comprehensive online platform designed to equip you with essential cybersecurity knowledge and tools. Our interactive homepage features a unique "tackle box" layout, where each clickable box represents a different cybersecurity topic or tool. From encryption techniques to SQL injection, threat detection to compliance, CyberPak offers a wide range of subjects to explore!</p>
             
                 <a className='Icons ' id="socials" title="GitHub" href="https://github.com/WixkedLuck/" target="_blank" rel="noreferrer"><FaGithubAlt size={40} /></a>
                 <a className='Icons ' id="socials" title="LinkedIn" href="https://www.linkedin.com/in/david-a-hybner/" target="_blank" rel="noreferrer"><FaLinkedinIn size={40} /></a>
@@ -52,7 +52,7 @@ function Home({ handlePageChange }) {
             </div>
             <div class="row">
                 <div class="col coll">
-                <p class="" onClick={() => handlePageChange('About')}> <img src={Cypher} alt='Password Generator V1' id='PassImg'></img>
+                <p class="" onClick={() => handlePageChange('Cipher')}> <img src={Cypher} alt='Password Generator V1' id='PassImg'></img>
                 <p Style="margin-top:1rem;" title='A Caesar Cypher Generator'>D Fdhvdu Fbsihu Jhqhudwru</p>
                  </p>
                 </div>
@@ -63,7 +63,7 @@ function Home({ handlePageChange }) {
                  <p Style="margin-top:1rem;" title='My Senior Project at VSU'>Extended Learning on Topics: Cybersecurity</p>
                 </div>
             </div>
-            <div id='footer'>
+            <div id='footer' Style="font-size:large;">
                 David Hybner 2025
             </div>
 

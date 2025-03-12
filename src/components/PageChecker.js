@@ -3,6 +3,7 @@ import About from './PasswordGen';
 import Home from './Home'
 import Nav from './Nav';
 import Sql from './SqlInject';
+import Cipher from './Cipher-Shift-Page';
 
 export default function PageChecker() {  
     const [currentPage, setCurrentPage] = useState('Home');   
@@ -27,7 +28,11 @@ const renderPage = () => {
       return <Sql handlePageChange={handlePageChange}/>;
      
     }
-   
+    if (currentPage === 'Cipher') {
+     
+      return <Cipher handlePageChange={handlePageChange}/>;
+     
+    }
     return null;
   };
 

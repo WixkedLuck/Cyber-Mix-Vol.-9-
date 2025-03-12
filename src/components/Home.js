@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 import Lottie from "lottie-react";
 import PassImg from "../lottie/Password-Gen-img.png";
-import SQLimg from "../lottie/SQL-Injections-img.png";
+import SQLimg from "../lottie/SQL-CTF.png";
 import Cypher from "../lottie/Cypher Shift.png"; 
 import Trojan from "../lottie/CyberGaurd.png"; 
 import groovyWalkAnimation from "../lottie/astronaut-with-space-shuttle.json";
@@ -46,7 +46,7 @@ function Home({ handlePageChange }) {
 
                 <div class="col coll">
                 <p class="" onClick={() => handlePageChange('Sql')}> <img src={SQLimg} alt='Password Generator V1' id='Img2'></img>
-                <p Style="margin-top:1rem;" title='Definitely  a witch trial' >A witch trial? No, but a fun challange all the less</p>
+                <p Style="margin-top:1rem;" title='CTF' >A Capture the Flag Exercise </p>
                  </p>
                 </div>
             </div>

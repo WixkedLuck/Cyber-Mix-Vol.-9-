@@ -5,6 +5,7 @@
 * [Usage](#usage)
  * [Contributors](#contributors)
  * [Site](#site)
+ * [Images](#Images)
 
 # Description
 Welcome to Cyber Pak Vol. 9, a project developed for a Cybersecurity bootcamp. This "tackle box" of cybersecurity tools and demonstrations covers various topics from our class curriculum.
@@ -28,7 +29,9 @@ Welcome to Cyber Pak Vol. 9, a project developed for a Cybersecurity bootcamp. T
 
 - This tool is uses to encode a message using the simplest and oldest encryption technique and gives a breif background on how it works.
 
+#### 4. Cyber Gaurd:
 
+- This module is an extra learning framework that covers more topics in cyber security. (Senior Project at VSU 2023)
 
 
 # Installation
@@ -58,5 +61,17 @@ The importance of input validation and parameterized queries
 
 # Site
 https://wixkedluck.github.io/Cyber-Mix-Vol.-9-/
-#
-![PortfolioV2](./public/CyberPak.png)
+
+# Images
+
+#### Logo
+![Logo](./public/CyberPak.png)
+
+#### Cipher Page 
+![Cipher](./public/cipher.png)
+
+#### Password Generator Page
+![Password-Generator](./public/Pass-gen.png)
+
+#### CTF Page
+![CTF-Page](./public/CTF.png)

@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { FaFlag } from "react-icons/fa";
-
+import CTF1 from "./CTF1";
+import CTF2 from "./CTF2";
+import CTF3 from "./CTF3"; 
 import '../styles/CTF.css'
 
 function Sql({ handlePageChange }) {
@@ -10,7 +12,7 @@ function Sql({ handlePageChange }) {
     const [answeredFlags, setAnsweredFlags] = useState([]);
     const timerRef = useRef(null);
 
- 
+
     const goToHome = () => {
         handlePageChange('Home');
     };
@@ -32,10 +34,12 @@ function Sql({ handlePageChange }) {
     };
 
     // Array of correct flag answers
-    const correctAnswers = ['flag1', 'flag2', 'flag3', 'flag4', 'flag5'];
+    const correctAnswers = ['4k9pl8dn5ag2', 't1m3f0urs0luti0n', 'w2zafuni0n7ghk9'];
 
 
     const handleSubmit = () => {
+
+
         const submittedAnswer = flagAnswer.trim().toLowerCase();
         if (correctAnswers.includes(submittedAnswer) && !answeredFlags.includes(submittedAnswer)) {
             setAnsweredFlags([...answeredFlags, submittedAnswer]);
@@ -55,6 +59,14 @@ function Sql({ handlePageChange }) {
 
             setFlagAnswer(''); // Clear the input after successful submission
         }
+
+
+        // modal 1 functions
+
+
+
+
+
     };
     return (
         <section>
@@ -132,27 +144,37 @@ function Sql({ handlePageChange }) {
 
                                 {/* <!-- Modal Flag1 --> */}
                                 <div class="modal fade" id="FlagM1" tabindex="-1" aria-labelledby="Flag1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
+                                    <div class="modal-dialog" >
+                                        <div class="modal-content" >
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="">Flag 1</h1>
+                                                <h1 class="modal-title fs-5" id="">Flag 1: A Basic Query</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                Flag1
+                                            <div class="modal-body" Style="padding:2rem; text-align:left;">
+                                                <p >SQL Injection  is a code injection technique that exploits vulnerabilities in web applications that interact with databases. It occurs when an attacker injects malicious SQL statements into input fields or other data entry points of a web application. The goal is to manipulate the application's database queries to gain unauthorized access, retrieve sensitive data, or perform destructive operations like deleting or altering records</p>
+                                                <p Style="font-weight:bold;" >How Does SQL Injection Work?</p>
+                                                <p>Web applications often use SQL queries to interact with databases. These queries fetch, modify, or delete data based on user input. </p>
+                                                <p>For more information on what an SQL injection is and a basic injection check out the following video:</p>
+                                                <br></br>
+                                                <iframe width="450" height="315" src="https://www.youtube.com/embed/2OPVViV-GQk?si=xduD2Qux2lVsvaI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                                <p Style=" text-align: center; padding-top:3rem;"> Challenge 1: Basic Injection login</p>
+                                              
+                                                <CTF1 />
+
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="col layer2" id='flag2'>
                                     <p Style="margin-top:1rem;" title='A Caesar Cypher Generator'>Flag 2</p>
-                                    <p>Difficulty: <span Style="color:green">Easy</span></p>
+                                    <p>Difficulty: <span Style="color:orange">Moderate</span></p>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FlagM2">
                                         Launch
                                     </button>
@@ -163,15 +185,25 @@ function Sql({ handlePageChange }) {
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 2</h1>
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 2: Time-based blind SQL injection 5-second delay</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                ...
+                                            <div class="modal-body" >
+                                                <div Style="text-align:left;">
+                                                <p>A time-based SQL injection is a type of blind SQL injection attack where the attacker observes the response time of the database to infer information.</p>
+                                                <ul>
+
+                                                    <li>If the injected condition is true, the database executes the delay, causing a noticeable increase in the application's response time</li>
+                                                    <li>By observing these time differences, the attacker can determine whether their injected conditions are true or false</li>
+                                                    <li>This allows the attacker to extract data one piece at a time by asking a series of yes/no questions about the database contents</li>
+                                                    <li>Time-based injections are particularly useful when the application doesn't display error messages or query results directly, making other types of SQL injection difficult. However, they are typically slower to execute as each piece of information requires a separate query</li>
+                                                </ul>
+                                                </div>
+                                                < CTF2 />
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -181,81 +213,38 @@ function Sql({ handlePageChange }) {
 
                                 <div class="col layer2" id='flag3'>
                                     <p Style="margin-top:1rem;" title='A Caesar Cypher Generator'>Flag 3</p>
-                                    <p>Difficulty: <span Style="color:orange">Moderate</span></p>
+                                    <p>Difficulty: <span Style="color:red">Hard</span></p>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FlagM3">
                                         Launch
                                     </button>
 
-                                     {/* <!-- Modal Flag3 --> */}
-                                <div class="modal fade" id="FlagM3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 3</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Flag3
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="col layer2" id='flag4'>
-                                    <p Style="margin-top:1rem;" title='A Caesar Cypher Generator'>Flag 4</p>
-                                    <p>Difficulty: <span Style="color:orange">Moderate</span></p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FlagM4">
-                                        Launch
-                                    </button>
-                                     {/* <!-- Modal Flag4 --> */}
-                                <div class="modal fade" id="FlagM4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 4</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                flag 4
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                               
+                                    {/* <!-- Modal Flag3 --> */}
+                                    <div class="modal fade" id="FlagM3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 3: Union Based Attack</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>A union-based SQL injection attack is a technique that allows an attacker to retrieve additional data from the database by extending the results of the original query</p>
+                                                    <ul>
+                                                        <li>For the attack to succeed, the malicious query must have the same structure as the original query, including the same number of columns and compatible data types</li>
+                                                        <li>This combined query returns a single result set containing data from both the original and the injected queries</li>
+                                                    </ul>
+                                                    <CTF3/>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
-                                <div class="col layer2" id='flag5'>
-                                    <p Style="margin-top:1rem;" title='A Caesar Cypher Generator'>Flag 5</p>
-                                    <p>Difficulty: <span Style="color:red">Hard</span></p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FlagM5">
-                                        Launch
-                                    </button>
-                                     {/* <!-- Modal Flag5 --> */}
-                                <div class="modal fade" id="FlagM5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Flag 5</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                flag 5
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            
+                        
+
+
                             </div>
 
 

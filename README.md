@@ -9,24 +9,25 @@
 # Description
 Welcome to Cyber Pak Vol. 9, a project developed for a Cybersecurity bootcamp. This "tackle box" of cybersecurity tools and demonstrations covers various topics from our class curriculum.
 
-Project Contents
-1. Password Generator
-This tool creates semi-complex passwords based on user input. Features include:
+### Project Contents
+#### 1. Password Generator:
 
-User-defined password length
+- This tool creates semi-complex passwords based on user input. Features include:
 
-Combination of uppercase and lowercase letters, numbers, and special characters
+- User-defined password length
 
-Randomized character selection for enhanced security
+- Combination of uppercase and lowercase letters, numbers, and special characters
 
-2. SQL Injection Demonstration
-This section showcases the concept of SQL injection attacks, a common web application vulnerability13. The demonstration includes:
+- Randomized character selection for enhanced security
 
-Examples of vulnerable SQL queries
+#### 2. SQL Injection CTF:
 
-Techniques used by attackers to exploit these vulnerabilities
+- This section showcases the concept of several SQL injection attacks in a solo ctf style competition 
 
-Methods to protect against SQL injection attacks
+#### 3. Caeser Cipher: 
+
+- This tool is uses to encode a message using the simplest and oldest encryption technique and gives a breif background on how it works.
+
 
 
 
